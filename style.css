@@ -31,10 +31,12 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
     padding-bottom: 50px;
+    font-size: 2em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
     
@@ -56,6 +58,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -69,10 +77,22 @@ section.imagem {
 }
 
 section.imagem  > p {
-    width: 400px;
+    min.width: 400px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
+section#img01 {
+    background-image: url('./imagens/background001.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('./imagens/background002.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 footer {
     background-color: black;
     color: white;
